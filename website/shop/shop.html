@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop — NOBLESSE Barber Co.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="shop.css" />
+    <link rel="stylesheet" href="/components/global.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <section class="page-banner">
+      <div class="wrap">
+        <div class="crumbs">
+          <a href="index.html">Home</a><span>/</span>Merchandise
+        </div>
+        <div class="eyebrow">The Noblesse Collection</div>
+        <h1>Merchandise &amp; Products</h1>
+        <p class="banner-sub">
+          Get to know the story, the people, and the standard behind every chair
+          at Noblesse.
+        </p>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="trust-strip">
+        <div class="trust-grid">
+          <div class="trust-item">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+            >
+              <path
+                d="M9 12l2 2 4-4M12 3l8 4v5c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V7z"
+              />
+            </svg>
+            <span>Barber-Grade Formulas</span>
+          </div>
+          <div class="trust-item">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+            >
+              <path d="M21 8l-9-5-9 5 9 5 9-5zM3 8v8l9 5 9-5V8" />
+            </svg>
+            <span>Same Standard, Every Bottle</span>
+          </div>
+          <div class="trust-item">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+            >
+              <path d="M20 7L9 18l-5-5" />
+              <path d="M20 7l-3-3" />
+            </svg>
+            <span>Authenticity Guaranteed</span>
+          </div>
+          <div class="trust-item">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+            >
+              <path
+                d="M3 3h2l2.4 12.4a2 2 0 002 1.6h8.6a2 2 0 002-1.6L21 6H6"
+              />
+              <circle cx="9" cy="21" r="1" />
+              <circle cx="18" cy="21" r="1" />
+            </svg>
+            <span>Pickup In-Store Or Ship</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-sec">
+      <div class="wrap">
+        <!-- TOOLBAR -->
+        <div class="shop-toolbar">
+          <div class="result-count" id="resultCount">
+            Showing 1–8 of 16 results
+          </div>
+
+          <div class="toolbar-actions">
+            <!-- Pencarian -->
+            <div class="search-box">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <path d="M21 21l-4.35-4.35" />
+              </svg>
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Cari produk..."
+              />
+            </div>
+
+            <!-- DROPDOWN 1: KATEGORI -->
+            <div class="custom-select" id="catSelect">
+              <div class="select-trigger" id="catTrigger">
+                <span id="catLabel">All Products</span>
+                <svg
+                  class="arrow-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </div>
+              <div class="select-dropdown" id="catDropdown">
+                <div class="dropdown-option selected" data-value="all">
+                  All Products
+                </div>
+                <div class="dropdown-option" data-value="styling">Styling</div>
+                <div class="dropdown-option" data-value="grooming">
+                  Grooming
+                </div>
+                <div class="dropdown-option" data-value="merch">
+                  Merchandise
+                </div>
+                <div class="dropdown-option" data-value="tools">
+                  Tools &amp; Sets
+                </div>
+              </div>
+            </div>
+
+            <!-- DROPDOWN 2: SORT BY -->
+            <div class="custom-select" id="sortSelect">
+              <div class="select-trigger" id="sortTrigger">
+                <span id="sortLabel">Sort by popularity</span>
+                <svg
+                  class="arrow-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </div>
+              <div class="select-dropdown" id="sortDropdown">
+                <div class="dropdown-option selected" data-value="popularity">
+                  Sort by popularity
+                </div>
+                <div class="dropdown-option" data-value="rating">
+                  Sort by average rating
+                </div>
+                <div class="dropdown-option" data-value="latest">
+                  Sort by latest
+                </div>
+                <div class="dropdown-option" data-value="price-low">
+                  Sort by price: low to high
+                </div>
+                <div class="dropdown-option" data-value="price-high">
+                  Sort by price: high to low
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GRID PRODUK -->
+        <div class="product-grid" id="productGrid">
+          <!-- Item 1 -->
+          <div
+            class="product-card"
+            data-cat="merch"
+            data-price="250000"
+            data-popularity="95"
+            data-rating="4.8"
+            data-date="2026-01"
+            data-title="Noblesse 40oz Tumbler Matte Black"
+          >
+            <div class="product-media">
+              <img
+                src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=80"
+                alt="40oz Tumbler"
+              />
+            </div>
+            <div class="product-body">
+              <div class="product-brand">NOBLESSE BARBER CO.</div>
+              <h4>40oz Premium Tumbler</h4>
+              <div class="product-price">Rp250.000</div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div
+            class="product-card"
+            data-cat="merch"
+            data-price="150000"
+            data-popularity="80"
+            data-rating="4.5"
+            data-date="2026-02"
+            data-title="Noblesse Black Leather Baseball"
+          >
+            <div class="product-media">
+              <img
+                src="https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?auto=format&fit=crop&w=800&q=80"
+                alt="Baseball Ball"
+              />
+            </div>
+            <div class="product-body">
+              <div class="product-brand">NOBLESSE MERCH</div>
+              <h4>Black Leather Baseball</h4>
+              <div class="product-price">Rp150.000</div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div
+            class="product-card"
+            data-cat="merch"
+            data-price="500000"
+            data-popularity="88"
+            data-rating="4.7"
+            data-date="2026-03"
+            data-title="Noblesse Matte Black Baseball Bat"
+          >
+            <div class="product-media">
+              <img
+                src="https://images.unsplash.com/photo-1593787406536-3676a152d9cb?auto=format&fit=crop&w=800&q=80"
+                alt="Baseball Bat"
+              />
+            </div>
+            <div class="product-body">
+              <div class="product-brand">NOBLESSE MERCH</div>
+              <h4>Matte Black Baseball Bat</h4>
+              <div class="product-price">Rp500.000</div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div
+            class="product-card"
+            data-cat="merch"
+            data-price="180000"
+            data-popularity="92"
+            data-rating="4.9"
+            data-date="2026-03"
+            data-title="Noblesse Gold Playing Cards Set"
+          >
+            <div class="product-media">
+              <img
+                src="https://images.unsplash.com/photo-1511193311914-0346f16efe90?auto=format&fit=crop&w=800&q=80"
+                alt="Playing Cards"
+              />
+            </div>
+            <div class="product-body">
+              <div class="product-brand">NOBLESSE MERCH</div>
+              <h4>Gold Edition Playing Cards</h4>
+              <div class="product-price">Rp180.000</div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div
+            class="product-card"
+            data-cat="styling"
+            data-price="165000"
+            data-popularity="98"
+            data-rating="5.0"
+            data-date="2026-02"
+            data-title="Matte Clay Pomade"
+          >
+            <div class="product-media">
+              <img
+                src="https://images.unsplash.com/photo-1608248597260-50d4b998cf5a?auto=format&fit=crop&w=800&q=80"
+                alt="Matte Clay Pomade"
+              />
+            </div>
+            <div class="product-body">
+              <div class="product-brand">NOBLESSE STYLING</div>
+              <h4>Matte Clay Pomade</h4>
+              <div class="product-price">Rp165.000</div>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div
+            class="product-card"
+            data-cat="styling"
+            data-price="150000"
+            data-popularity="85"
+            data-rating="4.6"
+            data-date="2026-01"
+            data-title="Classic Shine Water Pomade"
+          >
+            <div class="product-media">
+              <img
+                src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=800&q=80"
+                alt="Classic Shine Pomade"
+              />
+            </div>
+            <div class="product-body">
+              <div class="product-brand">NOBLESSE STYLING</div>
+              <h4>Classic Shine Pomade</h4>
+              <div class="product-price">Rp150.000</div>
+            </div>
+          </div>
+
+          <!-- Item 7 -->
+          <div
+            class="product-card"
+            data-cat="grooming"
+            data-price="190000"
+            data-popularity="90"
+            data-rating="4.8"
+            data-date="2026-02"
+            data-title="Signature Beard Oil"
+          >
+            <div class="product-media">
+              <img
+                src="https://images.unsplash.com/photo-1626285861696-9f0bf5a49c6d?auto=format&fit=crop&w=800&q=80"
+                alt="Signature Beard Oil"
+              />
+            </div>
+            <div class="product-body">
+              <div class="product-brand">NOBLESSE GROOMING</div>
+              <h4>Signature Beard Oil</h4>
+              <div class="product-price">Rp190.000</div>
+            </div>
+          </div>
+
+          <!-- Item 8 -->
+          <div
+            class="product-card"
+            data-cat="grooming"
+            data-price="210000"
+            data-popularity="75"
+            data-rating="4.4"
+            data-date="2026-01"
+            data-title="Sandalwood Shaving Cream"
+          >
+            <div class="product-media">
+              <img
+                src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80"
+                alt="Shaving Cream"
+              />
+            </div>
+            <div class="product-body">
+              <div class="product-brand">NOBLESSE GROOMING</div>
+              <h4>Sandalwood Shaving Cream</h4>
+              <div class="product-price">Rp210.000</div>
+            </div>
+          </div>
+
+          <!-- Item 9 -->
+          <div
+            class="product-card"
+            data-cat="tools"
+            data-price="120000"
+            data-popularity="82"
+            data-rating="4.5"
+            data-date="2026-03"
+            data-title="Handcrafted Wooden Comb"
+          >
+            <div class="product-media">
+              <img
+                src="https://images.unsplash.com/photo-1590159763121-7c9fd312190d?auto=format&fit=crop&w=800&q=80"
+                alt="Wooden Comb"
+              />
+            </div>
+            <div class="product-body">
+              <div class="product-brand">NOBLESSE TOOLS</div>
+              <h4>Handcrafted Wooden Comb</h4>
+              <div class="product-price">Rp120.000</div>
+            </div>
+          </div>
+
+          <!-- Item 10 -->
+          <div
+            class="product-card"
+            data-cat="tools"
+            data-price="450000"
+            data-popularity="94"
+            data-rating="4.9"
+            data-date="2026-02"
+            data-title="Classic Steel Straight Razor"
+          >
+            <div class="product-media">
+              <img
+                src="https://images.unsplash.com/photo-1508380702597-707c1b00695c?auto=format&fit=crop&w=800&q=80"
+                alt="Straight Razor"
+              />
+            </div>
+            <div class="product-body">
+              <div class="product-brand">NOBLESSE TOOLS</div>
+              <h4>Classic Steel Straight Razor</h4>
+              <div class="product-price">Rp450.000</div>
+            </div>
+          </div>
+
+          <!-- Item 11 -->
+          <div
+            class="product-card"
+            data-cat="grooming"
+            data-price="650000"
+            data-popularity="99"
+            data-rating="5.0"
+            data-date="2026-03"
+            data-title="Noblesse Signature Cologne"
+          >
+            <div class="product-media">
+              <img
+                src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80"
+                alt="Signature Cologne"
+              />
+            </div>
+            <div class="product-body">
+              <div class="product-brand">NOBLESSE FRAGRANCE</div>
+              <h4>Noblesse Signature Cologne</h4>
+              <div class="product-price">Rp650.000</div>
+            </div>
+          </div>
+
+          <!-- Item 12 -->
+          <div
+            class="product-card"
+            data-cat="tools"
+            data-price="850000"
+            data-popularity="96"
+            data-rating="4.9"
+            data-date="2026-03"
+            data-title="Founder's Edition Travel Kit"
+          >
+            <div class="product-media">
+              <img
+                src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80"
+                alt="Travel Kit Box"
+              />
+            </div>
+            <div class="product-body">
+              <div class="product-brand">NOBLESSE SETS</div>
+              <h4>Founder's Edition Set</h4>
+              <div class="product-price">
+                Rp850.000 <span>Rp1.000.000</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 13 -->
+          <div
+            class="product-card"
+            data-cat="styling"
+            data-price="175000"
+            data-popularity="89"
+            data-rating="4.7"
+            data-date="2026-03"
+            data-title="Texture Sea Salt Spray"
+          >
+            <div class="product-media">
+              <img
+                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80"
+                alt="Sea Salt Spray"
+              />
+            </div>
+            <div class="product-body">
+              <div class="product-brand">NOBLESSE STYLING</div>
+              <h4>Texture Sea Salt Spray</h4>
+              <div class="product-price">Rp175.000</div>
+            </div>
+          </div>
+
+          <!-- Item 14 -->
+          <div
+            class="product-card"
+            data-cat="grooming"
+            data-price="180000"
+            data-popularity="86"
+            data-rating="4.6"
+            data-date="2026-02"
+            data-title="Beard Wash &amp; Conditioner"
+          >
+            <div class="product-media">
+              <img
+                src="https://images.unsplash.com/photo-1556228722-d119f010e52b?auto=format&fit=crop&w=800&q=80"
+                alt="Beard Wash"
+              />
+            </div>
+            <div class="product-body">
+              <div class="product-brand">NOBLESSE GROOMING</div>
+              <h4>Beard Wash &amp; Conditioner</h4>
+              <div class="product-price">Rp180.000</div>
+            </div>
+          </div>
+
+          <!-- Item 15 -->
+          <div
+            class="product-card"
+            data-cat="merch"
+            data-price="290000"
+            data-popularity="93"
+            data-rating="4.8"
+            data-date="2026-01"
+            data-title="Noblesse Black Barber Apron"
+          >
+            <div class="product-media">
+              <img
+                src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=800&q=80"
+                alt="Barber Apron"
+              />
+            </div>
+            <div class="product-body">
+              <div class="product-brand">NOBLESSE MERCH</div>
+              <h4>Black Leather Trim Apron</h4>
+              <div class="product-price">Rp290.000</div>
+            </div>
+          </div>
+
+          <!-- Item 16 -->
+          <div
+            class="product-card"
+            data-cat="tools"
+            data-price="950000"
+            data-popularity="97"
+            data-rating="5.0"
+            data-date="2026-03"
+            data-title="Professional Cordless Hair Clipper"
+          >
+            <div class="product-media">
+              <img
+                src="https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&w=800&q=80"
+                alt="Hair Clipper"
+              />
+            </div>
+            <div class="product-body">
+              <div class="product-brand">NOBLESSE TOOLS</div>
+              <h4>Cordless Hair Clipper Pro</h4>
+              <div class="product-price">Rp950.000</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAGINATION -->
+        <div class="pagination-wrap" id="paginationWrap"></div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+    <script src="shop.js"></script>
+    <script src="/components/main.js"></script>
+  </body>
+</html>

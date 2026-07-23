@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Appointment & Contact — NOBLESSE Barber Co.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="/components/global.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <section class="page-banner">
+      <div class="wrap">
+        <div class="crumbs">
+          <a href="index.html">Home</a><span>/</span>Contact
+        </div>
+        <div class="eyebrow">Our Social Media</div>
+        <h1>Reservation Here</h1>
+        <p class="banner-sub">
+          Get to know the story, the people, and the standard behind every chair
+          at Noblesse.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== SOCIAL MEDIA CARDS SECTION ===== -->
+    <section class="social-section">
+      <div class="wrap">
+        <div class="social-grid">
+          <!-- WhatsApp -->
+          <a
+            href="https://wa.me/6281234567890"
+            target="_blank"
+            class="social-card"
+          >
+            <div class="social-icon-box">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+                <path
+                  d="M9 10a0.5.5 0 0 0 1 0V9a0.5.5 0 0 0-.5-.5H9a5 5 0 0 0 5 5v-.5a0.5.5 0 0 0-.5-.5h-1a0.5.5 0 0 0 0 1"
+                />
+              </svg>
+            </div>
+            <span class="social-name">WhatsApp</span>
+            <span class="social-handle">+62 812 3456 7890</span>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://instagram.com" target="_blank" class="social-card">
+            <div class="social-icon-box">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </div>
+            <span class="social-name">Instagram</span>
+            <span class="social-handle">@noblesse.barber</span>
+          </a>
+
+          <!-- Facebook -->
+          <a href="https://facebook.com" target="_blank" class="social-card">
+            <div class="social-icon-box">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                ></path>
+              </svg>
+            </div>
+            <span class="social-name">Facebook</span>
+            <span class="social-handle">NOBLESSE Barber Co.</span>
+          </a>
+
+          <!-- TikTok -->
+          <a href="https://tiktok.com" target="_blank" class="social-card">
+            <div class="social-icon-box">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 1 1-5.2-1.74 2.89 2.89 0 0 1 2.31-1.34V9.08a6.34 6.34 0 0 0-1 .08 6.34 6.34 0 1 0 7.34 6.25V8.56a8.26 8.26 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.01z"
+                />
+              </svg>
+            </div>
+            <span class="social-name">TikTok</span>
+            <span class="social-handle">@noblessebarber</span>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:hello@noblesse.com" class="social-card">
+            <div class="social-icon-box">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <span class="social-name">Email Us</span>
+            <span class="social-handle">hello@noblesse.com</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <div class="wrap book-grid">
+        <!-- LEFT: CONTACT INFO -->
+        <div>
+          <div class="info-card">
+            <h3>Visit the Lounge</h3>
+            <div class="book-info-row">
+              <svg class="icon" viewBox="0 0 48 48">
+                <path class="ic" d="M12 20 L24 8 L36 20 L36 40 L12 40 Z" />
+              </svg>
+              <div>
+                <strong>Location</strong
+                ><span
+                  >Jl. Sudirman No. 88, Batam Center, Batam, Riau Islands</span
+                >
+              </div>
+            </div>
+            <div class="book-info-row">
+              <svg class="icon" viewBox="0 0 48 48">
+                <path class="ic" d="M8 12 L24 26 L40 12" />
+                <rect class="ic" x="8" y="12" width="32" height="24" rx="3" />
+              </svg>
+              <div><strong>Email</strong><span>hello@noblesse.com</span></div>
+            </div>
+            <div class="book-info-row">
+              <svg class="icon" viewBox="0 0 48 48">
+                <path
+                  class="ic"
+                  d="M9 8 L18 8 L21 17 L16 20 Q19 28 26 31 L29 26 L38 29 L38 38 Q38 40 36 40 Q20 40 9 24 Q8 9 9 8Z"
+                />
+              </svg>
+              <div>
+                <strong>Phone / WhatsApp</strong><span>+62 812 3456 7890</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3>Opening Hours</h3>
+            <table class="hours-table">
+              <tr>
+                <td>Monday – Friday</td>
+                <td>10:00 – 21:00</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>10:00 – 22:00</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="map-frame">
+            <img
+              src="https://images.unsplash.com/photo-1781450090585-1a511b7066d9?fm=jpg&q=80&w=1200&auto=format&fit=crop"
+              alt="Map location placeholder of the lounge interior"
+            />
+            <svg class="pin" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 22s7-7.58 7-12A7 7 0 1 0 5 10c0 4.42 7 12 7 12Z"
+                stroke="#e3b768"
+                stroke-width="1.6"
+              />
+              <circle cx="12" cy="10" r="2.5" fill="#e3b768" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- RIGHT: BOOKING FORM -->
+        <form class="book-form" id="bookForm">
+          <h3 class="form-kicker">Reserve Now</h3>
+          <p class="sub">We'll confirm your reservation within the hour.</p>
+          <div class="form-row">
+            <div class="field">
+              <label for="fname">Name</label>
+              <input
+                type="text"
+                id="fname"
+                placeholder="Your full name"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="fphone">Phone</label>
+              <input type="tel" id="fphone" placeholder="+62 ..." required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="fservice">Service</label>
+              <select id="fservice">
+                <option>Classic Cut</option>
+                <option>Premium Cut</option>
+                <option>VIP Package</option>
+                <option>Wedding Groom</option>
+                <option>Membership</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="fbarber">Preferred Barber</label>
+              <select id="fbarber">
+                <option>No Preference</option>
+                <option>Dominic Reyes</option>
+                <option>Elian Marcos</option>
+                <option>Denzel Ray</option>
+                <option>Kian Aldrich</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="fdate">Date</label>
+              <input type="date" id="fdate" />
+            </div>
+            <div class="field">
+              <label for="ftime">Time</label>
+              <input type="time" id="ftime" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="fmsg">Message</label>
+            <textarea id="fmsg" placeholder="Any special requests?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold">
+            Reserve Now
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </button>
+          <p class="form-note">
+            Prefer to talk? WhatsApp us at +62 812 3456 7890.
+          </p>
+        </form>
+      </div>
+    </main>
+
+    <section class="map-section">
+      <div class="wrap">
+        <div class="map-container-wrapper" id="mapWrapper">
+          <!-- Top Left Reference Badge -->
+          <div class="map-top-badge">
+            <div>
+              <h4>Batam</h4>
+              <p>Batam, Batam City, Riau Islands, Indonesia</p>
+            </div>
+            <div>
+              <a
+                href="https://maps.google.com/?q=Batam"
+                target="_blank"
+                class="map-top-btn"
+                title="Open Map"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Ctrl + Scroll Overlay -->
+          <div class="ctrl-scroll-overlay" id="ctrlScrollOverlay">
+            <span>Use ctrl + scroll to zoom the map</span>
+          </div>
+
+          <!-- Leaflet Map Canvas -->
+          <div id="noblesse-batam-map"></div>
+
+          <!-- Bottom Left Location Detail Card -->
+          <div class="map-info-card" id="mapInfoCard">
+            <h3 id="cardTitle">NOBLESSE Barber Co. — Batam Center</h3>
+            <p class="card-address" id="cardAddress">
+              Jl. Sudirman No. 88, Batam Center, Batam, Riau Islands
+            </p>
+            <p
+              style="
+                font-size: 12px;
+                color: var(--gold-light);
+                margin-bottom: 12px;
+              "
+              id="cardDesc"
+            >
+              Main Lounge & Premium Barber Experience.
+            </p>
+            <div class="card-meta">
+              <div class="map-info-rating">
+                <span class="stars">★</span>
+                <span id="cardRating">4.9</span>
+                <span id="cardReviews">(320)</span>
+              </div>
+              <a href="#" target="_blank" class="btn-gmaps" id="cardGmapsLink">
+                Google Maps
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="contact.js"></script>
+    <script src="/components/main.js"></script>
+  </body>
+</html>

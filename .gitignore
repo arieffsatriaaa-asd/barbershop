@@ -1,0 +1,10 @@
+# Folder sampah editor
+.vscode/
+.idea/
+
+# Kalo ada node_modules
+node_modules/
+
+# File OS
+.DS_Store
+Thumbs.db

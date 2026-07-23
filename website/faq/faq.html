@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ — NOBLESSE Barber Co.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="faq.css" />
+    <link rel="stylesheet" href="/components/global.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <section class="page-banner">
+      <div class="wrap">
+        <div class="crumbs"><a href="index.html">Home</a><span>/</span>FAQ</div>
+        <div class="eyebrow">Got Questions?</div>
+        <h1>Frequently Asked Questions</h1>
+        <p class="banner-sub">
+          Get to know the story, the people, and the standard behind every chair
+          at Noblesse.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION SEARCH & FILTER -->
+    <section class="faq-search-sec">
+      <div class="wrap">
+        <div class="faq-filter-row">
+          <!-- SISI KIRI: ELEGAN HEADLINE -->
+          <div class="faq-header-text">
+            <h1>Punya Pertanyaan?</h1>
+            <p>
+              Pertanyakan pada kami, kami siap membantu menjelaskan gaya dan
+              layanan terbaik untuk Anda.
+            </p>
+          </div>
+
+          <!-- SISI KANAN: SEARCH BOX & DROPDOWN CATEGORY -->
+          <div class="faq-controls">
+            <!-- PENCARIAN -->
+            <div class="search-box-wrap">
+              <input
+                type="text"
+                id="faqSearch"
+                placeholder="Cari pertanyaan..."
+              />
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <path d="M21 21l-4.35-4.35" />
+              </svg>
+            </div>
+
+            <!-- DROPDOWN FILTER -->
+            <div class="faq-select-wrap" id="faqSelectWrap">
+              <select id="faqCategorySelect" class="faq-select">
+                <option value="all">Semua Kategori</option>
+                <option value="booking">Layanan & Booking</option>
+                <option value="facility">Fasilitas & Lokasi</option>
+                <option value="products">Produk & Perawatan</option>
+                <option value="payment">Pembayaran</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-sec">
+      <div class="wrap">
+        <div class="faq-grid" id="faqGrid">
+          <!-- ITEM 1 -->
+          <div class="faq-item" data-cat="booking">
+            <div class="faq-question">
+              <h3>
+                Apakah saya harus melakukan booking terlebih dahulu sebelum
+                datang?
+              </h3>
+              <div class="faq-icon">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Kami sangat menyarankan Anda melakukan booking secara online
+                melalui situs kami agar mendapatkan prioritas waktu dan
+                terhindar dari antrean panjang. Namun, kami juga tetap melayani
+                pelanggan <i>walk-in</i> sesuai dengan ketersediaan kursi barber
+                pada saat itu.
+              </p>
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="faq-item" data-cat="booking">
+            <div class="faq-question">
+              <h3>
+                Berapa lama durasi untuk satu kali sesi potong rambut &
+                grooming?
+              </h3>
+              <div class="faq-icon">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Rata-rata durasi sesi potong rambut standar adalah 45–60 menit.
+                Ini sudah mencakup konsultasi gaya, pencucian rambut awal,
+                pemotongan presisi, pemijatan kepala ringan, hot towel service,
+                serta pembersihan akhir & hair styling dengan produk premium.
+              </p>
+            </div>
+          </div>
+
+          <!-- ITEM 3 -->
+          <div class="faq-item" data-cat="booking">
+            <div class="faq-question">
+              <h3>
+                Bagaimana jika saya ingin mengubah jadwal atau membatalkan
+                booking?
+              </h3>
+              <div class="faq-icon">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Anda dapat mengubah jadwal atau membatalkan janji temu
+                setidaknya 2 jam sebelum waktu booking Anda melalui pesan
+                WhatsApp resmi kami. Mohon konfirmasi lebih awal agar jam
+                tersebut dapat dialokasikan untuk pelanggan lain.
+              </p>
+            </div>
+          </div>
+
+          <!-- ITEM 4 -->
+          <div class="faq-item" data-cat="facility">
+            <div class="faq-question">
+              <h3>
+                Apakah NOBLESSE memiliki fasilitas khusus penunjang kenyamanan?
+              </h3>
+              <div class="faq-icon">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Tentu! Lounge kami dilengkapi dengan pendingin ruangan full AC,
+                area tunggu dengan sofa kulit yang nyaman, pilihan complimentary
+                drink (kopi/teh/air mineral), Wi-Fi gratis berkecepatan tinggi,
+                serta suasana interior bernuansa vintage modern yang hangat.
+              </p>
+            </div>
+          </div>
+
+          <!-- ITEM 5 -->
+          <div class="faq-item" data-cat="facility">
+            <div class="faq-question">
+              <h3>
+                Apakah sterilizer dan peralatan kebersihan dijamin higienis?
+              </h3>
+              <div class="faq-icon">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Kesehatan dan kebersihan pelanggan adalah prioritas utama kami.
+                Seluruh sikat, clipper blade, dan guna silet memakai silet
+                steril sekali pakai (single-use razor blade). Peralatan
+                stainless steel lainnya selalu didisinfeksi menggunakan cairan
+                sterilizer standar medis sebelum digunakan ke setiap pelanggan.
+              </p>
+            </div>
+          </div>
+
+          <!-- ITEM 6 -->
+          <div class="faq-item" data-cat="products">
+            <div class="faq-question">
+              <h3>
+                Produk hair styling apa yang digunakan di NOBLESSE Barber Co.?
+              </h3>
+              <div class="faq-icon">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Kami hanya menggunakan produk pria kelas dunia dan berbahan
+                alami teruji, seperti pomade water-based, matte clay, sea salt
+                spray, dan beard oil eksklusif yang tidak merusak rambut serta
+                gampang dibersihkan. Anda juga dapat membeli produk-produk ini
+                langsung di outlet kami.
+              </p>
+            </div>
+          </div>
+
+          <!-- ITEM 7 -->
+          <div class="faq-item" data-cat="payment">
+            <div class="faq-question">
+              <h3>Metode pembayaran apa saja yang diterima di lokasi?</h3>
+              <div class="faq-icon">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Kami menerima berbagai metode pembayaran baik tunai (Cash)
+                maupun non-tunai, termasuk QRIS, Transfer Bank, Kartu
+                Debit/Kredit (Visa/Mastercard), serta E-Wallet (GoPay, OVO,
+                ShopeePay, DANA).
+              </p>
+            </div>
+          </div>
+
+          <!-- ITEM 8 -->
+          <div class="faq-item" data-cat="products">
+            <div class="faq-question">
+              <h3>
+                Apakah bisa berkonsultasi mengenai bentuk wajah dan potongan
+                yang sesuai?
+              </h3>
+              <div class="faq-icon">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Sangat bisa! Setiap sesi di NOBLESSE selalu diawali dengan 5-10
+                menit konsultasi gratis bersama Master Barber kami. Kami akan
+                merekomendasikan gaya rambut yang paling cocok berdasarkan
+                bentuk wajah, jenis rambut, serta aktivitas harian Anda.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="help-box">
+          <div
+            class="eyebrow"
+            style="justify-content: center; margin-bottom: 10px"
+          >
+            Masih Punya Pertanyaan?
+          </div>
+          <h3>Hubungi Tim Customer Care Kami</h3>
+          <p>
+            Jika pertanyaan Anda belum terjawab di atas, jangan ragu untuk
+            menghubungi kami langsung via WhatsApp atau kunjungi barber kami.
+          </p>
+          <a href="booking.html" class="btn btn-gold"
+            >Hubungi Kami via WhatsApp
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+    <script src="faq.js"></script>
+    <script src="/components/main.js"></script>
+  </body>
+</html>

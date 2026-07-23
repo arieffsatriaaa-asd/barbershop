@@ -1,0 +1,973 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOBLESSE — Barber Co.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="components/global.css" />
+    <link rel="stylesheet" href="website/home/index.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <section class="hero" id="home">
+      <div class="hero-slider" id="heroSlider">
+        <div
+          class="hero-slide active"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1747832663556-ae65718965ac?fm=jpg&q=80&w=2200&auto=format&fit=crop&quot;);
+          "
+        ></div>
+        <div
+          class="hero-slide"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1614438865362-9137f7e3036e?fm=jpg&q=80&w=2200&auto=format&fit=crop&quot;);
+          "
+        ></div>
+        <div
+          class="hero-slide"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1621605815971-fbc98d665033?fm=jpg&q=80&w=2200&auto=format&fit=crop&quot;);
+          "
+        ></div>
+      </div>
+      <div class="hero-overlay"></div>
+
+      <button
+        class="hero-arrow hero-arrow-left"
+        id="heroPrev"
+        aria-label="Previous slide"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M15 6l-6 6 6 6" />
+        </svg>
+      </button>
+      <button
+        class="hero-arrow hero-arrow-right"
+        id="heroNext"
+        aria-label="Next slide"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M9 6l6 6-6 6" />
+        </svg>
+      </button>
+
+      <div class="hero-content">
+        <img
+          class="hero-logo"
+          alt="Noblesse Barber Co."
+          src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20140%20140'%3E%3Ccircle%20cx='70'%20cy='70'%20r='66'%20fill='none'%20stroke='%23e3b768'%20stroke-width='1.5'/%3E%3Ccircle%20cx='70'%20cy='70'%20r='58'%20fill='none'%20stroke='%23e3b768'%20stroke-width='1'/%3E%3Ctext%20x='70'%20y='35'%20text-anchor='middle'%20font-family='Playfair%20Display,serif'%20font-size='13'%20letter-spacing='3'%20fill='%23e3b768'%20font-weight='700'%3ENOBLESSE%3C/text%3E%3Cg%20stroke='%23e3b768'%20stroke-width='2.2'%20fill='none'%20stroke-linecap='round'%3E%3Cpath%20d='M50%2058%20L90%2090'/%3E%3Cpath%20d='M90%2058%20L50%2090'/%3E%3Ccircle%20cx='50'%20cy='58'%20r='3'%20fill='%23e3b768'/%3E%3Ccircle%20cx='90'%20cy='58'%20r='3'%20fill='%23e3b768'/%3E%3C/g%3E%3Ctext%20x='70'%20y='113'%20text-anchor='middle'%20font-family='Poppins,sans-serif'%20font-size='9'%20letter-spacing='2'%20fill='%23efe8d9'%3EEST.%202014%3C/text%3E%3C/svg%3E"
+        />
+        <h1>A New Standard<br />Of <em>Grooming</em></h1>
+        <p class="lead">
+          Classic cuts. Modern style. Premium experience. Redefining confidence,
+          one cut at a time.
+        </p>
+        <div class="hero-actions">
+          <a href="#book" class="btn btn-gold btn-hero">Book Appointment </a>
+          <a href="#services" class="btn btn-outline btn-hero"
+            >Explore Services
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-dots" id="heroDots">
+        <button class="dot active" data-i="0" aria-label="Slide 1"></button>
+        <button class="dot" data-i="1" aria-label="Slide 2"></button>
+        <button class="dot" data-i="2" aria-label="Slide 3"></button>
+      </div>
+    </section>
+
+    <section class="marquee">
+      <div class="marquee-track">
+        <span
+          >✂ Potong Klasik &nbsp; • &nbsp; Skin Fade &nbsp; • &nbsp; Hot Towel
+          Shave &nbsp; • &nbsp; Razor Line Up &nbsp; • &nbsp; Perawatan Jenggot
+          •</span
+        >
+        <span
+          >✂ Potong Klasik &nbsp; • &nbsp; Skin Fade &nbsp; • &nbsp; Hot Towel
+          Shave &nbsp; • &nbsp; Razor Line Up &nbsp; • &nbsp; Perawatan Jenggot
+          •</span
+        >
+        <span
+          >✂ Potong Klasik &nbsp; • &nbsp; Skin Fade &nbsp; • &nbsp; Hot Towel
+          Shave &nbsp; • &nbsp; Razor Line Up &nbsp; • &nbsp; Perawatan Jenggot
+          •</span
+        >
+        <span
+          >✂ Potong Klasik &nbsp; • &nbsp; Skin Fade &nbsp; • &nbsp; Hot Towel
+          Shave &nbsp; • &nbsp; Razor Line Up &nbsp; • &nbsp; Perawatan Jenggot
+          •</span
+        >
+      </div>
+    </section>
+
+    <section class="service-strip" id="services">
+      <div class="wrap">
+        <div class="services-row">
+          <div class="svc">
+            <div class="ic-circle">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path
+                  d="M6 3l14 14M6 21L20 7M4 7a2 2 0 100-4 2 2 0 000 4zM4 21a2 2 0 100-4 2 2 0 000 4z"
+                />
+              </svg>
+            </div>
+            <h4>Haircut</h4>
+            <p>Classic & modern styles</p>
+          </div>
+          <div class="svc">
+            <div class="ic-circle">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path d="M6 4c4 0 6 4 6 9s-2 9-6 9M18 4c-4 0-6 4-6 9s2 9 6 9" />
+              </svg>
+            </div>
+            <h4>Beard Trim</h4>
+            <p>Shape, trim & define</p>
+          </div>
+          <div class="svc">
+            <div class="ic-circle">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path d="M5 12c3-6 11-6 14 0-3 6-11 6-14 0z" />
+                <circle cx="12" cy="12" r="1.5" />
+              </svg>
+            </div>
+            <h4>Shave</h4>
+            <p>Hot towel & premium shave</p>
+          </div>
+          <div class="svc">
+            <div class="ic-circle">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path d="M3 20c4-8 6-14 6-14M21 20c-4-8-6-14-6-14M7 8h10" />
+              </svg>
+            </div>
+            <h4>Hair Styling</h4>
+            <p>Perfect style every time</p>
+          </div>
+          <div class="svc">
+            <div class="ic-circle">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path d="M9 3h6l1 4H8l1-4zM6 7h12l-1 14H7L6 7z" />
+              </svg>
+            </div>
+            <h4>Premium Care</h4>
+            <p>Quality products & care</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="crafted">
+      <div class="wrap">
+        <div class="crafted-top">
+          <h2>Crafted Cuts.<br /><span class="accent">Confident You.</span></h2>
+          <p>
+            From timeless classics to modern trends, we tailor every cut to
+            match your style and personality.
+          </p>
+        </div>
+        <div class="crafted-grid">
+          <a class="crafted-card" href="hairstyle.html">
+            <img
+              src="https://loremflickr.com/500/650/barber,scissors/all?lock=11"
+              alt="Classic haircut"
+            />
+            <div class="cap">
+              <div>
+                <b>Classic Haircut</b><span>Clean, sharp, timeless.</span>
+              </div>
+              <div class="go">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a class="crafted-card" href="hairstyle.html">
+            <img
+              src="https://loremflickr.com/500/650/beard,grooming/all?lock=12"
+              alt="Beard grooming"
+            />
+            <div class="cap">
+              <div>
+                <b>Beard Grooming</b><span>Shape, define, elevate.</span>
+              </div>
+              <div class="go">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a class="crafted-card" href="hairstyle.html">
+            <img
+              src="https://loremflickr.com/500/650/hot,towel,shave/all?lock=13"
+              alt="Hot towel shave"
+            />
+            <div class="cap">
+              <div>
+                <b>Hot Towel Shave</b><span>Relax, refresh, renew.</span>
+              </div>
+              <div class="go">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </div>
+            </div>
+          </a>
+          <a class="crafted-card" href="hairstyle.html">
+            <img
+              src="https://loremflickr.com/500/650/hairstyle,men/all?lock=14"
+              alt="Hair styling"
+            />
+            <div class="cap">
+              <div>
+                <b>Hair Styling</b><span>Style that speaks for you.</span>
+              </div>
+              <div class="go">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="barbers" id="barbers">
+      <div class="wrap">
+        <div class="barbers-top">
+          <div>
+            <div class="eyebrow">Meet The Masters</div>
+            <h2>The Hands Behind<br />Every Great Cut.</h2>
+          </div>
+          <p>
+            Each barber at NOBLESSE brings their own signature style, honed over
+            years of craft — trained, certified, and obsessed with precision.
+          </p>
+        </div>
+        <div class="barbers-grid">
+          <div class="barber-tile">
+            <div class="photo">
+              <span class="spec">Fades &amp; Tapers</span>
+              <img
+                src="https://loremflickr.com/500/625/barber,man,portrait/all?lock=41"
+                alt="Rafael Dumas"
+              />
+              <div class="name-tag">
+                <b>Rafael Dumas</b><span>Master Barber</span>
+              </div>
+            </div>
+            <div class="foot">
+              <span class="handle">@rafael.cuts</span
+              ><a href="#book" class="book">Book</a>
+            </div>
+          </div>
+          <div class="barber-tile">
+            <div class="photo">
+              <span class="spec">Modern Styling</span>
+              <img
+                src="https://loremflickr.com/500/625/man,beard,portrait/all?lock=42"
+                alt="Elian Marcos"
+              />
+              <div class="name-tag">
+                <b>Elian Marcos</b><span>Senior Stylist</span>
+              </div>
+            </div>
+            <div class="foot">
+              <span class="handle">@elian.grm</span
+              ><a href="#book" class="book">Book</a>
+            </div>
+          </div>
+          <div class="barber-tile">
+            <div class="photo">
+              <span class="spec">Beard Sculpting</span>
+              <img
+                src="https://loremflickr.com/500/625/man,face,beard/all?lock=43"
+                alt="Denzel Ray"
+              />
+              <div class="name-tag">
+                <b>Denzel Ray</b><span>Beard Specialist</span>
+              </div>
+            </div>
+            <div class="foot">
+              <span class="handle">@denzel.ray</span
+              ><a href="#book" class="book">Book</a>
+            </div>
+          </div>
+          <div class="barber-tile">
+            <div class="photo">
+              <span class="spec">Classic Grooming</span>
+              <img
+                src="https://loremflickr.com/500/625/barber,shop,man/all?lock=44"
+                alt="Kian Aldrich"
+              />
+              <div class="name-tag">
+                <b>Kian Aldrich</b><span>Grooming Artist</span>
+              </div>
+            </div>
+            <div class="foot">
+              <span class="handle">@kian.aldrich</span
+              ><a href="#book" class="book">Book</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="about">
+      <div class="wrap exp-grid">
+        <div class="exp-copy">
+          <div class="eyebrow">Our Promise</div>
+          <h2>More Than A Cut.<br />It's An Experience.</h2>
+          <p>
+            We don't just cut hair, we build confidence. Step in, relax, and
+            leave looking your best.
+          </p>
+          <a href="#book" class="btn btn-gold"
+            >Book Now
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+        </div>
+        <div style="position: relative">
+          <div class="exp-visual">
+            <img
+              src="https://loremflickr.com/900/650/barbershop,tools/all?lock=15"
+              alt="Barber tools"
+            />
+          </div>
+          <div class="exp-panel">
+            <div class="row">
+              <div class="ic">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                >
+                  <path
+                    d="M12 2l2.5 6.5L21 11l-6.5 2.5L12 20l-2.5-6.5L3 11l6.5-2.5z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <b>Premium Products</b><span>Only the best for you</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="ic">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                >
+                  <path
+                    d="M17 20a5 5 0 00-10 0M12 12a4 4 0 100-8 4 4 0 000 8z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <b>Expert Barbers</b><span>Trained, skilled, passionate</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="ic">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                >
+                  <path
+                    d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0112 5.5 5.4 5.4 0 0121.3 12c-2.3 4.4-9.3 9-9.3 9z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <b>Relaxing Environment</b><span>Comfort meets style</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="culture" id="barbers">
+      <div class="wrap culture-grid">
+        <div class="culture-visual">
+          <img
+            src="https://loremflickr.com/900/700/barber,working/all?lock=16"
+            alt="Barber at work"
+          />
+        </div>
+        <div class="culture-copy">
+          <div class="eyebrow">Our Story</div>
+          <h2>More Than A Barber Shop, It's A Culture.</h2>
+          <p>
+            Founded on passion and precision, NOBLESSE is where classic
+            techniques meet modern style. We're here to elevate your everyday
+            look.
+          </p>
+          <a href="#about" class="btn btn-outline"
+            >Learn More
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ambient Video Section -->
+    <section class="ambient-video-section">
+      <div class="video-container">
+        <div class="video-overlay-text">[ Cinematic Silence ]</div>
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="wrap">
+        <div class="why-head">
+          <div class="eyebrow" style="justify-content: center">
+            Why Choose Us
+          </div>
+          <h2>Quality You Can See, Experience You Can Feel.</h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="ic">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+              >
+                <path
+                  d="M12 2l2.9 6 6.6.6-5 4.4 1.5 6.5L12 16l-5.9 3.5L7.6 13l-5-4.4 6.6-.6z"
+                />
+              </svg>
+            </div>
+            <h4>Top Rated</h4>
+            <p>Loved by 2K+ clients</p>
+          </div>
+          <div class="why-card">
+            <div class="ic">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+              >
+                <path d="M17 20a5 5 0 00-10 0M12 12a4 4 0 100-8 4 4 0 000 8z" />
+              </svg>
+            </div>
+            <h4>Expert Team</h4>
+            <p>15+ professionals at your service</p>
+          </div>
+          <div class="why-card">
+            <div class="ic">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+              >
+                <path d="M12 2v8M8 6l4 4 4-4M5 12h14l-1.5 8h-11z" />
+              </svg>
+            </div>
+            <h4>Hygiene First</h4>
+            <p>Clean tools, safe environment</p>
+          </div>
+          <div class="why-card">
+            <div class="ic">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+              >
+                <path
+                  d="M12 2l2.5 6.5L21 11l-6.5 2.5L12 20l-2.5-6.5L3 11l6.5-2.5z"
+                />
+              </svg>
+            </div>
+            <h4>Premium Quality</h4>
+            <p>The best products for you</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="premium-serv" id="premium-services">
+      <div class="wrap premium-grid">
+        <div class="premium-intro">
+          <h2><span class="accent">20+</span><br />Layanan Premium</h2>
+          <p>
+            Nikmati pengalaman perawatan premium kami untuk gaya dan kepercayaan
+            diri Anda.
+          </p>
+          <a href="#pricing" class="link-arrow">Selengkapnya</a>
+        </div>
+        <div class="premium-showcase">
+          <div class="ps-card" id="psCard">
+            <div class="ps-img">
+              <img
+                class="ps-layer active"
+                id="psImgA"
+                src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?fm=jpg&q=80&w=800&auto=format&fit=crop"
+                alt=""
+              />
+              <img class="ps-layer" id="psImgB" src="" alt="" />
+            </div>
+            <div class="ps-text">
+              <div class="ps-layer-text active" id="psTextA">
+                <h3>Hair Tattoo</h3>
+                <p>
+                  Untuk kamu yang ingin mencari gaya rambut khas. Biarkan
+                  barberman kami yang terampil membentuk dan merancang gaya
+                  rambut-mu seperti hasil mahakaryanya.
+                </p>
+              </div>
+              <div class="ps-layer-text" id="psTextB">
+                <h3></h3>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="premium-dots" id="premiumDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="wrap">
+        <div class="price-top">
+          <div>
+            <div class="eyebrow">Our Price List</div>
+            <h2>Investment In<br />Your Best Look.</h2>
+          </div>
+          <p>
+            Transparent pricing, no surprises. Every service includes a
+            consultation, hot towel finish, and premium products.
+          </p>
+        </div>
+        <div class="price-grid">
+          <div class="price-card">
+            <div class="ic-circle">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path
+                  d="M6 3l14 14M6 21L20 7M4 7a2 2 0 100-4 2 2 0 000 4zM4 21a2 2 0 100-4 2 2 0 000 4z"
+                />
+              </svg>
+            </div>
+            <h3>Classic Cuts</h3>
+            <p class="desc">
+              Timeless precision cutting for every hair type, finished with a
+              clean straight-razor edge.
+            </p>
+            <ul class="price-list">
+              <li>
+                <span class="p-name"
+                  >Signature Haircut<small
+                    >Wash, cut & style · 45 min</small
+                  ></span
+                ><span class="p-dots"></span><span class="p-val">$35</span>
+              </li>
+              <li>
+                <span class="p-name"
+                  >Skin Fade<small>Precision fade & blend · 40 min</small></span
+                ><span class="p-dots"></span><span class="p-val">$38</span>
+              </li>
+              <li>
+                <span class="p-name"
+                  >Buzz Cut<small
+                    >Clipper-only, quick clean · 20 min</small
+                  ></span
+                ><span class="p-dots"></span><span class="p-val">$22</span>
+              </li>
+              <li>
+                <span class="p-name"
+                  >Kids Cut<small>Ages 12 & under · 30 min</small></span
+                ><span class="p-dots"></span><span class="p-val">$25</span>
+              </li>
+            </ul>
+            <a href="#book" class="btn btn-outline"
+              >Book This
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="price-card featured">
+            <span class="badge">Most Booked</span>
+            <div class="ic-circle">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path
+                  d="M12 2l2.5 6.5L21 11l-6.5 2.5L12 20l-2.5-6.5L3 11l6.5-2.5z"
+                />
+              </svg>
+            </div>
+            <h3>Signature Rituals</h3>
+            <p class="desc">
+              Our full grooming experience — the complete NOBLESSE treatment
+              from head to jaw.
+            </p>
+            <ul class="price-list">
+              <li>
+                <span class="p-name"
+                  >The Noblesse Experience<small
+                    >Cut + beard + hot towel shave · 90 min</small
+                  ></span
+                ><span class="p-dots"></span><span class="p-val">$85</span>
+              </li>
+              <li>
+                <span class="p-name"
+                  >Executive Package<small
+                    >Cut + beard trim + facial · 75 min</small
+                  ></span
+                ><span class="p-dots"></span><span class="p-val">$68</span>
+              </li>
+              <li>
+                <span class="p-name"
+                  >Groom's Package<small
+                    >Full styling for the big day · 100 min</small
+                  ></span
+                ><span class="p-dots"></span><span class="p-val">$110</span>
+              </li>
+              <li>
+                <span class="p-name"
+                  >Father & Son<small>Two cuts, one chair · 60 min</small></span
+                ><span class="p-dots"></span><span class="p-val">$55</span>
+              </li>
+            </ul>
+            <a href="#book" class="btn btn-gold"
+              >Book This
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="price-card">
+            <div class="ic-circle">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <path d="M5 12c3-6 11-6 14 0-3 6-11 6-14 0z" />
+                <circle cx="12" cy="12" r="1.5" />
+              </svg>
+            </div>
+            <h3>Beard & Shave</h3>
+            <p class="desc">
+              Sharp lines and a smooth finish, from a quick shape-up to a full
+              hot towel ritual.
+            </p>
+            <ul class="price-list">
+              <li>
+                <span class="p-name"
+                  >Hot Towel Shave<small
+                    >Straight razor, steamed towel · 40 min</small
+                  ></span
+                ><span class="p-dots"></span><span class="p-val">$32</span>
+              </li>
+              <li>
+                <span class="p-name"
+                  >Beard Sculpt<small
+                    >Shape, define & oil finish · 30 min</small
+                  ></span
+                ><span class="p-dots"></span><span class="p-val">$28</span>
+              </li>
+              <li>
+                <span class="p-name"
+                  >Beard Trim<small
+                    >Quick clean-up & line up · 15 min</small
+                  ></span
+                ><span class="p-dots"></span><span class="p-val">$18</span>
+              </li>
+              <li>
+                <span class="p-name"
+                  >Line Up<small
+                    >Edges & hairline detailing · 15 min</small
+                  ></span
+                ><span class="p-dots"></span><span class="p-val">$15</span>
+              </li>
+            </ul>
+            <a href="#book" class="btn btn-outline"
+              >Book This
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="wrap">
+        <div class="gallery-head">
+          <div>
+            <div class="eyebrow">Gallery</div>
+            <h2>Fresh Cuts, Real Results.</h2>
+          </div>
+          <div class="gallery-controls">
+            <button class="g-arrow" id="prevBtn" aria-label="previous">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M15 6l-6 6 6 6" />
+              </svg>
+            </button>
+            <button class="g-arrow" id="nextBtn" aria-label="next">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M9 6l6 6-6 6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="gallery-viewport">
+          <div class="gallery-track" id="galleryTrack">
+            <div class="g-item">
+              <img
+                src="https://loremflickr.com/500/620/man,haircut/all?lock=20"
+                alt=""
+              />
+            </div>
+            <div class="g-item">
+              <img
+                src="https://loremflickr.com/500/620/man,beard/all?lock=21"
+                alt=""
+              />
+            </div>
+            <div class="g-item">
+              <img
+                src="https://loremflickr.com/500/620/man,hairstyle/all?lock=22"
+                alt=""
+              />
+            </div>
+            <div class="g-item">
+              <img
+                src="https://loremflickr.com/500/620/man,barbershop/all?lock=23"
+                alt=""
+              />
+            </div>
+            <div class="g-item">
+              <img
+                src="https://loremflickr.com/500/620/man,fade,haircut/all?lock=24"
+                alt=""
+              />
+            </div>
+            <div class="g-item">
+              <img
+                src="https://loremflickr.com/500/620/man,shave/all?lock=25"
+                alt=""
+              />
+            </div>
+            <div class="g-item">
+              <img
+                src="https://loremflickr.com/500/620/man,pompadour/all?lock=26"
+                alt=""
+              />
+            </div>
+            <div class="g-item">
+              <img
+                src="https://loremflickr.com/500/620/man,mustache/all?lock=27"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="stats-bar">
+        <div class="stat"><b>2K+</b><span>Happy Clients</span></div>
+        <div class="stat"><b>12+</b><span>Years Experience</span></div>
+        <div class="stat"><b>15+</b><span>Expert Barbers</span></div>
+        <div class="stat"><b>98%</b><span>Satisfaction Rate</span></div>
+      </div>
+    </div>
+
+    <!-- BOOKING TEASER -->
+    <section class="book-teaser" id="booking">
+      <div class="photo">
+        <img
+          src="https://images.unsplash.com/photo-1614438865362-9137f7e3036e?fm=jpg&q=70&w=2000&auto=format&fit=crop"
+          alt="Barbershop lounge"
+        />
+      </div>
+      <div class="wrap">
+        <div class="eyebrow reveal">Reserve Your Chair</div>
+        <h2 class="reveal">Your Seat at the Lounge is Waiting</h2>
+        <p class="reveal">
+          Book your appointment and find everything you need to visit us —
+          location, hours, and direct contact — on one page.
+        </p>
+        <a
+          href="booking.html"
+          class="btn btn-primary reveal btn-gold"
+          data-ripple
+          >Book Appointment</a
+        >
+      </div>
+    </section>
+
+    <div id="footer"></div>
+    <script src="components/main.js"></script>
+    <script src="website/home/index.js"></script>
+  </body>
+</html>
