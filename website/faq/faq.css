@@ -331,6 +331,10 @@
   .help-box {
     padding: 30px 20px;
   }
+  .help-box .btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /* Mobile phones (~600px and below) */
@@ -363,6 +367,17 @@
   }
   .help-box h3 {
     font-size: 22px;
+  }
+  .help-box .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 18px;
+    font-size: 12px;
+    white-space: normal;
+    text-align: center;
+  }
+  .help-box .btn svg {
+    flex-shrink: 0;
   }
 }
 

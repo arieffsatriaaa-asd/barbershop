@@ -689,6 +689,22 @@
   .invest-head {
     max-width: none;
   }
+
+  /* Capital & Tiers dan Projected Returns: paksa 1 kolom biar kartu
+     nggak keremes 3-in-a-row & isi teks/angka nabrak satu sama lain. */
+  .tiers-grid,
+  .returns-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Margin negatif ini didesain buat overlap di layout desktop (3 kolom).
+     Begitu tiers-grid jadi 1 kolom, tingginya section berubah drastis,
+     jadi margin negatif ini bikin section ke-tarik naik & nabrak/nimpa
+     konten legal-sec di atasnya. Matiin di mobile/tablet. */
+  .tiers-sec2 {
+    margin-top: 0;
+  }
 }
 @media (max-width: 768px) {
   .menu-toggle {
