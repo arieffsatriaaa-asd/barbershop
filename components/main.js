@@ -33,11 +33,11 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       }
 
-      // ===== AUTO ACTIVE NAVBAR =====
-      const currentPage = window.location.pathname.split("/").pop() || "index.html";
+      // ===== AUTO ACTIVE NAVBAR (pake clean URL path, bukan nama file) =====
+      const currentPath = window.location.pathname.replace(/\/$/, "") || "/";
       document.querySelectorAll("#navbar a").forEach(link => {
-        const linkPage = link.getAttribute("href").split("/").pop();
-        if (linkPage === currentPage) {
+        const linkPath = link.getAttribute("href").replace(/\/$/, "") || "/";
+        if (linkPath === currentPath) {
           link.classList.add("active");
         }
       });

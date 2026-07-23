@@ -403,6 +403,10 @@ footer {
   letter-spacing: 0.04em;
 }
 
+.foot-bottom a {
+  color: var(--gold-light);
+}
+
 @media (max-width: 1150px) {
   .btn-nav {
     display: none;
